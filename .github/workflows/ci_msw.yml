@@ -2,6 +2,12 @@
 name: MSW builds
 
 on:
+  workflow_dispatch:
+    inputs:
+      example_input:
+        description: 'An example input'
+        required: true
+        default: 'default value'
   push:
     branches:
       - master
